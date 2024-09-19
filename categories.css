@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.sport  {
+    padding-top: 100px;
+    margin-left: 100px;
+}
+.sport span {
+    color: rgb(207, 207, 193);
+}
+.category-nav {
+    display: flex;
+    gap: 60rem;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 20px 80px;
+    font-weight: bolder;
+}
+.new {
+    color: #fc4308;
+}
+
+.popular-container-b.top {
+    margin-top: 20px;
+}

@@ -1,0 +1,75 @@
+
+
+.sport.about  {
+    padding-top: 100px;
+    margin-left: 100px;
+}
+.sport.about span {
+    color: rgb(207, 207, 193);
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px 100px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+}
+.about-info {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.about-info p {
+    line-height: 30px;
+}
+
+.location-info {
+    display: flex;
+    gap: 30px;
+    margin: 50px 100px;
+}
+.about-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.about-info-two {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about-info-two div{
+    display: flex;
+    gap: 10px;
+}
+
+
+.about-images-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 100px 30px 100px;
+}
+.about-images {
+    display: flex;
+    gap: 50px;
+}
+.about-images div {
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.about-images div h4 {
+    background-color: rgb(247, 242, 233);
+    padding: 10px;
+    border-radius: 10px;
+}
