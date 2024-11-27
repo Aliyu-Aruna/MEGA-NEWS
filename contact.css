@@ -111,4 +111,44 @@
     border-radius: 10px;
     color: white;
     border: none;
+    cursor: pointer;
+}
+.contact-container-c button:hover {
+  background-color: rgb(44, 227, 72);
+}
+
+
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    .contact-container {
+        margin: 10px;
+    }
+    .contact-container-a {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .contact-container-a div input {
+        width: 17rem;
+    }
+    .contact-container-b {
+        flex-direction: column;
+    }
+
+    .contact-b-type .type-1 {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 10px;
+    }
+    .type-2 input{
+        width: 19rem;
+    }
+    .contact-container-c {
+        margin-left: 210px;
+    }
+
+    .contact-container-c button:hover {
+        background-color: rgb(44, 227, 72);
+      }
 }

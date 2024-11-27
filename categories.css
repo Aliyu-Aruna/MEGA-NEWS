@@ -26,3 +26,31 @@
 .popular-container-b.top {
     margin-top: 20px;
 }
+
+.popular-info.swiper-slide {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+@media (max-width:768px) {
+    body {
+        width: 100%;
+    }
+    .category-nav {
+        gap: 1rem;
+        padding: 5px;
+        margin: 20px 3px;
+    }
+    .category-nav ul {
+        display: flex;
+        gap: 25px;
+    }
+    .category-nav div {
+        display: flex;
+        gap: 2px;
+    }
+}

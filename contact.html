@@ -6,8 +6,13 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
+
 <body>
+
+    <div class="loader"></div>
+    
     <header>
         <div class="nav-info">
             <nav>
@@ -15,12 +20,16 @@
                     <li><a href="index.html"><h1>MEGA.news</h1></a></li>
                     <li><a href="categories.html">Categories <select name="options" id="categories-options"></select></a></li>
                     <li><a href="pages.html">Pages <select name="options1" id="pages-options"></select></a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a id="active" href="contact.html">Contact Us</a></li>
                     <li><a href="about.html">About Us </a></li>
                 </ul>
             </nav>
         </div>
-        <div><i class="fa-solid fa-bars" id="hamburger"></i></div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="header-info">
             <div class="search">
                 <i class="fa-solid fa-bars" id="i1"></i>
@@ -109,97 +118,117 @@
 
     <footer>
 
-        <section class="footer-1">
-            <div class="footer1-info">
-                <div class="footer1-news">
-                    <h2><small></small> Mega News</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
-                    </p>
-                    <h2><small></small>Newsletters</h2>
-                    <div class="footer-input">
-                        <input type="text" placeholder="write your email">
-                        <img src="/images/icon copy.png" alt="">
+        <div class="footer-main">
+            <section class="footer-1">
+                <div class="footer1-info">
+                    <div class="footer1-news one">
+                        <h2><small></small> Mega News</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
+                        </p>
+                        <h2><small></small>Newsletters</h2>
+                        <div class="footer-input">
+                            <input type="text" placeholder="write your email">
+                            <img src="/images/icon copy.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="footer1-category">
-                    <div class="footer1-categories">
-                        <h2><small></small>Categories</h2>
-                        <ul>
-                            <li>Culture</li>
-                            <li>Fashion</li>
-                            <li>Features</li>
-                            <li>Food</li>
-                            <li>Health Living</li>
-                            <li>Technology</li>
-                        </ul>
-                    </div>
-                    <div class="footer1-social">
-                        <h2><small></small>Social Network</h2>
-                        <div class="footer-icons">
-                            <div class="instagram">
-                                <img src="/images/instagram.icon.png" alt="">
-                                <span>instagram</span>
+                    <div class="footer1-category">
+                        <div class="footer1-categories">
+                            <h2><small></small>Categories</h2>
+                            <ul>
+                                <li>Culture</li>
+                                <li>Fashion</li>
+                                <li>Features</li>
+                                <li>Food</li>
+                                <li>Health Living</li>
+                                <li>Technology</li>
+                            </ul>
+                        </div>
+                        <div class="footer1-social">
+                            <h2><small></small>Social Network</h2>
+                            <div class="footer-icons">
+                                <div class="instagram">
+                                    <img src="/images/instagram.icon.png" alt="">
+                                    <span>instagram</span>
+                                </div>
+                                <div id="whatsapp"><img src="/images/footer-twitter.png" alt=""></div>
                             </div>
-                            <div id="whatsapp"><img src="/images/footer-twitter.png" alt=""></div>
                         </div>
                     </div>
                 </div>
+                <div class="footer-copyright one">
+                    <div class="footer-policy">Privacy Policy | Terms & Condition</div>
+                    <div class="footer-copy">All Copyright &copy; 2022 Reserved</div>
+                </div>
+            </section>
+    
+    
+            <section class="footer-2">
+                <div class="footer2-newcomment">
+                    <h2><small></small>New Comment</h2>
+                    <div class="comment">
+                        <h4>Ellsmartx</h4>
+                        <p>how nice does this look 😍 I feel it should be delicious, thank you
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4>Cassia</h4>
+                        <p>Take a rest, i'll be cheer up you again in 2 next game go go go</p>
+                    </div>
+                    <div class="comment">
+                        <h4>Amanda</h4>
+                        <p></p>you were stunning today, jan! 💗 great match 👍🏽👍🏽
+                    </div>
+                    <div class="comment">
+                        <h4>Denis Simonassi</h4>
+                        <p>It was a great match today Janzi! You did great😉</p>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <section class="footer-3">
+                <div class="footer3-header">
+                    <h2><small></small> Follow On Instagram</h2>
+                </div>
+                <div class="footer3-images">
+                    <div class="images">
+                        <img src="/images/f1.png" alt="">
+                        <img src="/images/f2.png" alt="">
+                        <img src="/images/f3.png" alt="">
+                    </div>
+                    <div class="images">
+                        <img src="/images/f4.png" alt="">
+                        <img src="/images/f5.png" alt="">
+                        <img src="/images/f6.png" alt="">
+                    </div>
+                    <div class="images">
+                        <img src="/images/f7.png" alt="">
+                        <img src="/images/f8.png" alt="">
+                        <img src="/images/f9.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer1-news two">
+            <h2><small></small> Mega News</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
+            </p>
+            <h2><small></small>Newsletters</h2>
+            <div class="footer-input">
+                <input type="text" placeholder="write your email">
+                <img src="/images/icon copy.png" alt="">
             </div>
-            <div class="footer-copyright">
-                <div class="footer-policy">Privacy Policy | Terms & Condition</div>
-                <div class="footer-copy">All Copyright &copy; 2022 Reserved</div>
-            </div>
-        </section>
+        </div>
+        <div class="footer-copyright two">
+            <div class="footer-policy">Privacy Policy | Terms & Condition</div>
+            <div class="footer-copy">All Copyright &copy; 2022 Reserved</div>
+        </div>
 
-
-        <section class="footer-2">
-            <div class="footer2-newcomment">
-                <h2><small></small>New Comment</h2>
-                <div class="comment">
-                    <h4>Ellsmartx</h4>
-                    <p>how nice does this look 😍 I feel it should be delicious, thank you
-                    </p>
-                </div>
-                <div class="comment">
-                    <h4>Cassia</h4>
-                    <p>Take a rest, i'll be cheer up you again in 2 next game go go go</p>
-                </div>
-                <div class="comment">
-                    <h4>Amanda</h4>
-                    <p></p>you were stunning today, jan! 💗 great match 👍🏽👍🏽
-                </div>
-                <div class="comment">
-                    <h4>Denis Simonassi</h4>
-                    <p>It was a great match today Janzi! You did great😉</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="footer-3">
-            <div class="footer3-header">
-                <h2><small></small> Follow On Instagram</h2>
-            </div>
-            <div class="footer3-images">
-                <div class="images">
-                    <img src="/images/f1.png" alt="">
-                    <img src="/images/f2.png" alt="">
-                    <img src="/images/f3.png" alt="">
-                </div>
-                <div class="images">
-                    <img src="/images/f4.png" alt="">
-                    <img src="/images/f5.png" alt="">
-                    <img src="/images/f6.png" alt="">
-                </div>
-                <div class="images">
-                    <img src="/images/f7.png" alt="">
-                    <img src="/images/f8.png" alt="">
-                    <img src="/images/f9.png" alt="">
-                </div>
-            </div>
-        </section>
 
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>

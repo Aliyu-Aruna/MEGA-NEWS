@@ -1,6 +1,16 @@
-
+const hamburger = document.querySelector(".hamburger")
+const nav_info = document.querySelector(".nav-info")
+hamburger.addEventListener("click", ()=>{
+    nav_info.classList.toggle("active")
+    hamburger.classList.toggle("active")
+})
+var loader = document.querySelector(".loader")
+window.addEventListener("load",()=>{
+    loader.style.display = "none"
+})
 const userlocation = document.getElementById("userlocation"),
-temperature = document.querySelector(".temperature"),
+temperature = d
+ocument.querySelector(".temperature"),
 weathericon = document.querySelector(".weathericon"),
 discription = document.querySelector(".discription"),
 date = document.querySelector(".date"),

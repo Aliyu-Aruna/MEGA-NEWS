@@ -8,3 +8,15 @@
     align-items: center;
     padding: 150px 100px 50px 100px;
 }
+@media (max-width:768px) {
+    body {
+        width: 100%;
+    }
+    .pages {
+        padding: 100px 50px 50px 50px;
+        width: 100%;
+    }
+    .pages img {
+        height: 100px;
+    }
+}

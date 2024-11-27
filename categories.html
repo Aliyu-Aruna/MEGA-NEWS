@@ -6,21 +6,31 @@
     <title>Categories</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="categories.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
+
+    <div class="loader"></div>
+
     <header>
         <div class="nav-info">
             <nav>
                 <ul>
                     <li><a href="index.html"><h1>MEGA.news</h1></a></li>
-                    <li><a href="categories.html">Categories <select name="options" id="categories-options"></select></a></li>
+                    <li><a id="active" href="categories.html">Categories <select name="options" id="categories-options"></select></a></li>
                     <li><a href="pages.html">Pages <select name="options1" id="pages-options"></select></a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                     <li><a href="about.html">About Us </a></li>
                 </ul>
             </nav>
         </div>
-        <div><i class="fa-solid fa-bars" id="hamburger"></i></div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <div class="header-info">
             <div class="search">
                 <i class="fa-solid fa-bars" id="i1"></i>
@@ -36,8 +46,10 @@
         </div>
         
     </header>
+
+
     <section class="sport">
-        <div>Home <span>>sport</span></div>
+        <div>Home <span>>Categories</span></div>
     </section>
 
     <nav class="category-nav">
@@ -53,368 +65,554 @@
         </div>
     </nav>
 
-<section class="popular-post-container">
-    <div class="popular-container-a">
-        <h2><small></small>Categories:sport</h2>
-    </div>
-    <div class="popular-container-b">
-        <div class="popular-info">
-            <div class="p-image">
-                <img src="/images/pp1.png" alt="">
-            </div>
-            <div class="p-info">
-                <h5>Opening Day Of boating season,seattle WA</h5>
-                <p>Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge</p>
-            </div>
-            <div class="p-about">
-                <div class="div1">
-                    <img src="/images/ppi1.png" alt="">
-                    <div>
-                        <h5>James</h5>
-                        <span>August 18,2022</span>
+    <section class="popular-post-container mySwiper">
+        <div class="popular-container-a">
+            <h2><small></small>Categories:sport</h2>
+        </div>
+        <div class="popular-container-b swiper-wrapper">
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp1.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>Opening Day Of boating season,seattle WA</h5>
+                    <p>Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi1.png" alt="">
+                        <div>
+                            <h5>James</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
                     </div>
                 </div>
-                <div class="div2">
-                    <img src="/images/pp-icon.png" alt="">
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp2.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Chose The Right Laptop For Your Self</h5>
+                    <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi2.png" alt="">
+                        <div>
+                            <h5>Louis Hoebregts</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp3.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Built The First Real Self-Driving Car</h5>
+                    <p>Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi3.png" alt="">
+                        <div>
+                            <h5>Mary</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp4.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Persuade Your Parents to Buy Fast Food</h5>
+                    <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi4.png" alt="">
+                        <div>
+                            <h5>Jon Kantner</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp2.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Chose The Right Laptop For Your Self</h5>
+                    <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi2.png" alt="">
+                        <div>
+                            <h5>Louis Hoebregts</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp4.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Persuade Your Parents to Buy Fast Food</h5>
+                    <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi4.png" alt="">
+                        <div>
+                            <h5>Jon Kantner</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="popular-info">
-            <div class="p-image">
-                <img src="/images/pp2.png" alt="">
-            </div>
-            <div class="p-info">
-                <h5>How To Chose The Right Laptop For Your Self</h5>
-                <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
-            </div>
-            <div class="p-about">
-                <div class="div1">
-                    <img src="/images/ppi2.png" alt="">
-                    <div>
-                        <h5>Louis Hoebregts</h5>
-                        <span>August 18,2022</span>
-                    </div>
-                </div>
-                <div class="div2">
-                    <img src="/images/pp-icon.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="popular-info">
-            <div class="p-image">
-                <img src="/images/pp3.png" alt="">
-            </div>
-            <div class="p-info">
-                <h5>How To Built The First Real Self-Driving Car</h5>
-                <p>Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when</p>
-            </div>
-            <div class="p-about">
-                <div class="div1">
-                    <img src="/images/ppi3.png" alt="">
-                    <div>
-                        <h5>Mary</h5>
-                        <span>August 18,2022</span>
-                    </div>
-                </div>
-                <div class="div2">
-                    <img src="/images/pp-icon.png" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="popular-info">
-            <div class="p-image">
-                <img src="/images/pp4.png" alt="">
-            </div>
-            <div class="p-info">
-                <h5>How To Persuade Your Parents to Buy Fast Food</h5>
-                <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.</p>
-            </div>
-            <div class="p-about">
-                <div class="div1">
-                    <img src="/images/ppi4.png" alt="">
-                    <div>
-                        <h5>Jon Kantner</h5>
-                        <span>August 18,2022</span>
-                    </div>
-                </div>
-                <div class="div2">
-                    <img src="/images/pp-icon.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
 
+    <section class="popular-post-container mySwiper">
+        <div class="popular-container-b swiper-wrapper">
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/t1.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>Opening Day Of boating season,seattle WA</h5>
+                    <p>Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi1.png" alt="">
+                        <div>
+                            <h5>James</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/t2.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Chose The Right Laptop For Your Self</h5>
+                    <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi2.png" alt="">
+                        <div>
+                            <h5>Louis Hoebregts</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/t3.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Built The First Real Self-Driving Car</h5>
+                    <p>Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi3.png" alt="">
+                        <div>
+                            <h5>Mary</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/t4.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Persuade Your Parents to Buy Fast Food</h5>
+                    <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi4.png" alt="">
+                        <div>
+                            <h5>Jon Kantner</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/t1.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>Opening Day Of boating season,seattle WA</h5>
+                    <p>Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi1.png" alt="">
+                        <div>
+                            <h5>James</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/t3.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Built The First Real Self-Driving Car</h5>
+                    <p>Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi3.png" alt="">
+                        <div>
+                            <h5>Mary</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
 
-<div class="popular-container-b">
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/t1.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>Opening Day Of boating season,seattle WA</h5>
-            <p>Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District (UW) while the Montlake Bridge</p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi1.png" alt="">
-                <div>
-                    <h5>James</h5>
-                    <span>August 18,2022</span>
+    <section class="popular-post-container mySwiper">
+        <div class="popular-container-b top swiper-wrapper">
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/n2.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>House boating on Lake Shasta</h5>
+                    <p>The best way to spend a long 4th of July weekend. Wake boarding, swimming, barbecues, and bonfires.                </p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi1.png" alt="">
+                        <div>
+                            <h5>James</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/t2.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>How To Chose The Right Laptop For Your Self</h5>
-            <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi2.png" alt="">
-                <div>
-                    <h5>Louis Hoebregts</h5>
-                    <span>August 18,2022</span>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp2.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>How To Chose The Right Laptop For Your Self</h5>
+                    <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi2.png" alt="">
+                        <div>
+                            <h5>Louis Hoebregts</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/t3.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>How To Built The First Real Self-Driving Car</h5>
-            <p>Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when</p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi3.png" alt="">
-                <div>
-                    <h5>Mary</h5>
-                    <span>August 18,2022</span>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp3.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>Why Buying a New Car Makes More Sense than Buying Used</h5>
+                    <p>Many experts will tell you buying cars used is best for your long-term financial health. Here’s why they’re (mostly) wrong</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi3.png" alt="">
+                        <div>
+                            <h5>Mary</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/t4.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>How To Persuade Your Parents to Buy Fast Food</h5>
-            <p>Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.</p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi4.png" alt="">
-                <div>
-                    <h5>Jon Kantner</h5>
-                    <span>August 18,2022</span>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/top4.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>Lasagna is but a Pasta Cake</h5>
+                    <p>Re-envision the description of a common food from a different perspective — it is … pasta cake layered with cheese, meat, pasta repeated, bake and serve. </p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi4.png" alt="">
+                        <div>
+                            <h5>Jon Kantner</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/n2.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>House boating on Lake Shasta</h5>
+                    <p>The best way to spend a long 4th of July weekend. Wake boarding, swimming, barbecues, and bonfires.                </p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi1.png" alt="">
+                        <div>
+                            <h5>James</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="popular-info swiper-slide">
+                <div class="p-image">
+                    <img src="/images/pp3.png" alt="">
+                </div>
+                <div class="p-info">
+                    <h5>Why Buying a New Car Makes More Sense than Buying Used</h5>
+                    <p>Many experts will tell you buying cars used is best for your long-term financial health. Here’s why they’re (mostly) wrong</p>
+                </div>
+                <div class="p-about">
+                    <div class="div1">
+                        <img src="/images/ppi3.png" alt="">
+                        <div>
+                            <h5>Mary</h5>
+                            <span>August 18,2022</span>
+                        </div>
+                    </div>
+                    <div class="div2">
+                        <img src="/images/pp-icon.png" alt="">
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
     
-<div class="popular-container-b top">
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/n2.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>House boating on Lake Shasta</h5>
-            <p>The best way to spend a long 4th of July weekend. Wake boarding, swimming, barbecues, and bonfires.                </p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi1.png" alt="">
-                <div>
-                    <h5>James</h5>
-                    <span>August 18,2022</span>
-                </div>
-            </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/pp2.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>How To Chose The Right Laptop For Your Self</h5>
-            <p>Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs</p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi2.png" alt="">
-                <div>
-                    <h5>Louis Hoebregts</h5>
-                    <span>August 18,2022</span>
-                </div>
-            </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/pp3.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>Why Buying a New Car Makes More Sense than Buying Used</h5>
-            <p>Many experts will tell you buying cars used is best for your long-term financial health. Here’s why they’re (mostly) wrong</p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi3.png" alt="">
-                <div>
-                    <h5>Mary</h5>
-                    <span>August 18,2022</span>
-                </div>
-            </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="popular-info">
-        <div class="p-image">
-            <img src="/images/top4.png" alt="">
-        </div>
-        <div class="p-info">
-            <h5>Lasagna is but a Pasta Cake</h5>
-            <p>Re-envision the description of a common food from a different perspective — it is … pasta cake layered with cheese, meat, pasta repeated, bake and serve. </p>
-        </div>
-        <div class="p-about">
-            <div class="div1">
-                <img src="/images/ppi4.png" alt="">
-                <div>
-                    <h5>Jon Kantner</h5>
-                    <span>August 18,2022</span>
-                </div>
-            </div>
-            <div class="div2">
-                <img src="/images/pp-icon.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
+    
+    
+    <footer>
 
-<footer>
-
-        <section class="footer-1">
-            <div class="footer1-info">
-                <div class="footer1-news">
-                    <h2><small></small> Mega News</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
-                    </p>
-                    <h2><small></small>Newsletters</h2>
-                    <div class="footer-input">
-                        <input type="text" placeholder="write your email">
-                        <img src="/images/icon copy.png" alt="">
+        <div class="footer-main">
+            <section class="footer-1">
+                <div class="footer1-info">
+                    <div class="footer1-news one">
+                        <h2><small></small> Mega News</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
+                        </p>
+                        <h2><small></small>Newsletters</h2>
+                        <div class="footer-input">
+                            <input type="text" placeholder="write your email">
+                            <img src="/images/icon copy.png" alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="footer1-category">
-                    <div class="footer1-categories">
-                        <h2><small></small>Categories</h2>
-                        <ul>
-                            <li>Culture</li>
-                            <li>Fashion</li>
-                            <li>Features</li>
-                            <li>Food</li>
-                            <li>Health Living</li>
-                            <li>Technology</li>
-                        </ul>
-                    </div>
-                    <div class="footer1-social">
-                        <h2><small></small>Social Network</h2>
-                        <div class="footer-icons">
-                            <div class="instagram">
-                                <img src="/images/instagram.icon.png" alt="">
-                                <span>instagram</span>
+                    <div class="footer1-category">
+                        <div class="footer1-categories">
+                            <h2><small></small>Categories</h2>
+                            <ul>
+                                <li>Culture</li>
+                                <li>Fashion</li>
+                                <li>Features</li>
+                                <li>Food</li>
+                                <li>Health Living</li>
+                                <li>Technology</li>
+                            </ul>
+                        </div>
+                        <div class="footer1-social">
+                            <h2><small></small>Social Network</h2>
+                            <div class="footer-icons">
+                                <div class="instagram">
+                                    <img src="/images/instagram.icon.png" alt="">
+                                    <span>instagram</span>
+                                </div>
+                                <div id="whatsapp"><img src="/images/footer-twitter.png" alt=""></div>
                             </div>
-                            <div id="whatsapp"><img src="/images/footer-twitter.png" alt=""></div>
                         </div>
                     </div>
                 </div>
+                <div class="footer-copyright one">
+                    <div class="footer-policy">Privacy Policy | Terms & Condition</div>
+                    <div class="footer-copy">All Copyright &copy; 2022 Reserved</div>
+                </div>
+            </section>
+    
+    
+            <section class="footer-2">
+                <div class="footer2-newcomment">
+                    <h2><small></small>New Comment</h2>
+                    <div class="comment">
+                        <h4>Ellsmartx</h4>
+                        <p>how nice does this look 😍 I feel it should be delicious, thank you
+                        </p>
+                    </div>
+                    <div class="comment">
+                        <h4>Cassia</h4>
+                        <p>Take a rest, i'll be cheer up you again in 2 next game go go go</p>
+                    </div>
+                    <div class="comment">
+                        <h4>Amanda</h4>
+                        <p></p>you were stunning today, jan! 💗 great match 👍🏽👍🏽
+                    </div>
+                    <div class="comment">
+                        <h4>Denis Simonassi</h4>
+                        <p>It was a great match today Janzi! You did great😉</p>
+                    </div>
+                </div>
+            </section>
+    
+    
+            <section class="footer-3">
+                <div class="footer3-header">
+                    <h2><small></small> Follow On Instagram</h2>
+                </div>
+                <div class="footer3-images">
+                    <div class="images">
+                        <img src="/images/f1.png" alt="">
+                        <img src="/images/f2.png" alt="">
+                        <img src="/images/f3.png" alt="">
+                    </div>
+                    <div class="images">
+                        <img src="/images/f4.png" alt="">
+                        <img src="/images/f5.png" alt="">
+                        <img src="/images/f6.png" alt="">
+                    </div>
+                    <div class="images">
+                        <img src="/images/f7.png" alt="">
+                        <img src="/images/f8.png" alt="">
+                        <img src="/images/f9.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer1-news two">
+            <h2><small></small> Mega News</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin
+            </p>
+            <h2><small></small>Newsletters</h2>
+            <div class="footer-input">
+                <input type="text" placeholder="write your email">
+                <img src="/images/icon copy.png" alt="">
             </div>
-            <div class="footer-copyright">
-                <div class="footer-policy">Privacy Policy | Terms & Condition</div>
-                <div class="footer-copy">All Copyright &copy; 2022 Reserved</div>
-            </div>
-        </section>
+        </div>
+        <div class="footer-copyright two">
+            <div class="footer-policy">Privacy Policy | Terms & Condition</div>
+            <div class="footer-copy">All Copyright &copy; 2022 Reserved</div>
+        </div>
 
-
-        <section class="footer-2">
-            <div class="footer2-newcomment">
-                <h2><small></small>New Comment</h2>
-                <div class="comment">
-                    <h4>Ellsmartx</h4>
-                    <p>how nice does this look 😍 I feel it should be delicious, thank you
-                    </p>
-                </div>
-                <div class="comment">
-                    <h4>Cassia</h4>
-                    <p>Take a rest, i'll be cheer up you again in 2 next game go go go</p>
-                </div>
-                <div class="comment">
-                    <h4>Amanda</h4>
-                    <p></p>you were stunning today, jan! 💗 great match 👍🏽👍🏽
-                </div>
-                <div class="comment">
-                    <h4>Denis Simonassi</h4>
-                    <p>It was a great match today Janzi! You did great😉</p>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="footer-3">
-            <div class="footer3-header">
-                <h2><small></small> Follow On Instagram</h2>
-            </div>
-            <div class="footer3-images">
-                <div class="images">
-                    <img src="/images/f1.png" alt="">
-                    <img src="/images/f2.png" alt="">
-                    <img src="/images/f3.png" alt="">
-                </div>
-                <div class="images">
-                    <img src="/images/f4.png" alt="">
-                    <img src="/images/f5.png" alt="">
-                    <img src="/images/f6.png" alt="">
-                </div>
-                <div class="images">
-                    <img src="/images/f7.png" alt="">
-                    <img src="/images/f8.png" alt="">
-                    <img src="/images/f9.png" alt="">
-                </div>
-            </div>
-        </section>
 
     </footer>
+
+
+        <script src="main.js"></script>
+
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+  
+        breakpoints: {
+          600: {
+              slidesPerView: 4, 
+          }
+        }
+      });
+    </script>
 
 </body>
 </html>
